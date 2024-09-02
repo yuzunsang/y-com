@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+.leftSectionWrapper {
+  flex-grow: 1;
+}
+.leftSection {
+  width: 275px;
+  height: 100dvh;
+  background-color: teal;
+}
+
+.rightSectionWrapper {
+  flex-grow: 1;
+  background-color: tomato;
+}
+.rightSectionInner {
+  width: 990px;
+  height: 100dvh;
+}
