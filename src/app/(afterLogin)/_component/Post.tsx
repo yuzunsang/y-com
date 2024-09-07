@@ -14,7 +14,6 @@ dayjs.extend(relativeTime);
 type Props = {
   noImage?: boolean;
 };
-
 export default function Post({ noImage }: Props) {
   const target = {
     postId: 1,
@@ -27,7 +26,6 @@ export default function Post({ noImage }: Props) {
     createdAt: new Date(),
     Images: [] as any[],
   };
-
   if (Math.random() > 0.5 && !noImage) {
     target.Images.push(
       { imageId: 1, link: faker.image.urlLoremFlickr() },

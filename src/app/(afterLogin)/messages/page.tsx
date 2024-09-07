@@ -1,5 +1,18 @@
-import styles from "@/app/(afterLogin)/layout.module.css";
+import style from "./message.module.css";
+import Room from "@/app/(afterLogin)/messages/_component/Room";
 
-export default function Page() {
-  return <main className={styles.main}>messages 페이지입니다.</main>;
+export default function Home() {
+  return (
+    <main className={style.main}>
+      <div className={style.header}>
+        <h3>쪽지</h3>
+      </div>
+      <Room />
+      <Room />
+      <Room />
+      <Room />
+      <Room />
+      <Room />
+    </main>
+  );
 }
